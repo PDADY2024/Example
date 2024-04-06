@@ -1,0 +1,18 @@
+class car:
+    carname = "toyota"
+    def move(self):
+        print(self.carname,"its moving")
+
+
+class truck:
+    truckname = "honda"
+    def move(self):
+        print(self.truckname,"its moving")
+
+
+
+vehicles = [car(), truck()]
+for vehicle in vehicles:
+    vehicle.move()
+
+    #  when the code takes many form its called polymorphism

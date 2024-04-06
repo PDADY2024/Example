@@ -1,0 +1,31 @@
+# create a shopping cart for two customers each
+class Shopping:
+    def __init__(self):# instance attribiute
+        self.cart = []
+    def items(self,item):
+        self.cart.append(item)
+        print(self.cart)
+
+customer1 = Shopping()
+customer1.items("macbook")
+
+customer2 = Shopping()
+customer2.items('tshirt')
+
+
+class Bank:
+    def __init__(self):
+        self.balance = 1000
+        self.min = 100
+    def get_balance(self):
+        return self.balance
+    def withdrwaw(self,amount):
+        if amount > self.balance and amount < self.min:
+            print("ur broke")
+        else:
+            self.balance = self.balance - amount
+        print('$',self.balance)
+        
+
+mybank = Bank()
+mybank.withdrwaw(int(input("how much do you want to withdraw?")))

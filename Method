@@ -1,0 +1,20 @@
+class  Calculator:
+    brand = 'casio'
+    def add(self,a,b):  # method
+        return a+b
+    
+my_calc = Calculator()
+my_calc.add(5,3) # calling method
+x = my_calc.add(5,3)
+print(x)
+
+
+class Bank:
+    balance = 40000
+    def get_balance(self):
+        return self.balance
+
+my_bank = Bank()
+my_bank.get_balance()
+bal = my_bank.get_balance()
+print(bal) 

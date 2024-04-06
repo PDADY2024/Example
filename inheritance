@@ -1,0 +1,31 @@
+class smartdevice:
+    def __init__(self,brand,hasgps):
+        self.brand = brand
+        self.hasgps = hasgps
+    def recharge(self):
+        print("charging baby😍")
+        charger = 'oraimo'
+        print(charger)
+
+
+class phone(smartdevice): #inheriting recharge from smartdevice
+     def __init__(self,brand,price):
+         self.brand = brand
+         self.price = price
+
+
+
+class watch(smartdevice):
+         def __init__(self,brand,hasgps): 
+            smartdevice.__init__(self,brand,hasgps)  #inheriting attribites
+
+
+
+mywatch = watch("oppo",False)
+myphone = phone("samsung",100)
+print(mywatch.brand)
+print(mywatch.hasgps)
+print(myphone.brand)
+print(myphone.recharge())
+
+

@@ -1,0 +1,12 @@
+class Bank:
+    def __init__(self,name):
+        self.name = name
+        self.__balance = 1000 # private attribute
+
+    def getbalance(self):
+        return self.__balance
+        
+
+
+account = Bank("peter")
+print(account.getbalance())

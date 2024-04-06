@@ -1,0 +1,23 @@
+class Phone:
+    def __init__(self,brand): # __init__ is called a constructor
+        self.brand = brand
+
+myphone = Phone("apple")
+grandmaphone = Phone('nokia')
+x = myphone.brand
+y= grandmaphone.brand
+print(x,y)
+
+class Laptop:
+    def __init__(self,brand):
+        self.brand = brand
+        self.age = 10
+
+    def  years(self,increment):
+            self.age = self.age + increment
+            print(self.age)
+
+my_laptop = Laptop('apple')
+my_dadlaptop = Laptop('dell')
+my_laptop.years(10)
+print(my_dadlaptop.brand)

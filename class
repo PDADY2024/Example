@@ -1,0 +1,18 @@
+class Phone:
+    brand = 'iphone'
+    grandma_phone_brand =' samsung'
+    print(brand)
+
+myphone = Phone()
+grandma_phone = Phone()
+print(grandma_phone.grandma_phone_brand)
+
+
+class Fruits:
+    fav = 'apple'
+    price = 300
+    place_of_growth = 'japan'
+    print(place_of_growth)
+
+my_fruit = Fruits()
+print(my_fruit.fav,my_fruit.price)
